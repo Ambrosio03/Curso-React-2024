@@ -52,6 +52,12 @@ function handlerToggleCompleted(taskId) {
     setTasks(updateTask);
 }
 
+const handlerKeyDow = (event) => {
+  if (event.key === "Enter") {
+    handlerAddTask();
+  }
+}
+
   return (
     <div className='max-w-md mx-auto mt-8 p-6 bg-yellow-50 shadow-md rounded-md'>
         <h1 className='text-2x1 mb-4 font-bold uppercase text-center'>ToDoList</h1>
@@ -60,8 +66,8 @@ function handlerToggleCompleted(taskId) {
             className='flex-1 mr-2 p-2 border rounded-md focus:outline-none focus:border-blue-500'
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
-            //onKeyDown={}
-             />
+            onKeyDown={handlerKeyDow}
+            />
             <button className='bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-800'
             onClick={handlerAddTask}> Agregar tarea</button>
         </div>
