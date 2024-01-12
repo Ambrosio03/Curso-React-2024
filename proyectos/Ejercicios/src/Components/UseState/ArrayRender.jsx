@@ -1,9 +1,8 @@
 import React from 'react'
-
-
+const miArray = ["Ambrosio", "Pablo", "Antonio", "Javier"];
 
 function ArrayRender() {
-    const miArray = ["Ambrosio", "Pablo", "Antonio", "Javier"];
+    
   return (
     miArray.map((nombre, index) => (
         <li key={index}>{nombre}</li>
