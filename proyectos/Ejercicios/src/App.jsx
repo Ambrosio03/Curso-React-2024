@@ -14,6 +14,10 @@ function App() {
       <Header title={"Actividades Relacion de Ejercicios React"}></Header>
       <ArrayRender></ArrayRender>
       <OneClick></OneClick>
+
+      <div style={{ backgroundColor: 'red', fontSize: "16px" }}>
+        <h3>Esto tiene stilo</h3>
+</div>
       
     </>
     
