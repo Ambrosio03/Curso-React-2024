@@ -5,8 +5,12 @@ import React from 'react'
 //import Contador from "./components/UseState/Contador";
 //import ContadorDoble from "./components/UseState/ContadorDoble";
 //import ContadorDobleBest from "./components/UseState/ContadorDobleBest";
-import RegistrarFormularios from "./components/UseState/RegistrarFormularios";
-import ToDoListTailWindCss from './components/UseState/ToDoListTailWindCss';
+//import RegistrarFormularios from "./components/UseState/RegistrarFormularios";
+//import ToDoListTailWindCss from './components/UseState/ToDoListTailWindCss';
+import ComponenteProps from './components/Props/ComponenteProps';
+import { UseEffectBasic } from './components/UseEffect/UseEffectBasic';
+import { ResizeListener } from './components/UseEffect/ResizeListener';
+import GitHubUsers from './components/UseEffect/GitHubUserCardApi/GitHubUsers';
 //import DarkLightMode from "./components/UseState/DarkLightMode";
 
 
@@ -15,9 +19,12 @@ const App = () => {
 
   return (
     <>
-    <RegistrarFormularios></RegistrarFormularios>
-    <ToDoListTailWindCss></ToDoListTailWindCss>
-
+    {/* <RegistrarFormularios></RegistrarFormularios>
+    <ToDoListTailWindCss></ToDoListTailWindCss> */}
+    {/* <ComponenteProps></ComponenteProps> */}
+    {/* <UseEffectBasic></UseEffectBasic> */}
+    {/* <ResizeListener></ResizeListener> */}
+    <GitHubUsers></GitHubUsers>
     </>
   )
 
