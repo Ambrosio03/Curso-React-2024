@@ -16,7 +16,10 @@ useEffect(() => {
             
                 const data = await fetchGitHubUsers();
                 setUsers(data);
-                setLoading(false);
+                setTimeout(() => {
+                    setLoading(false);
+                }, 5000);
+                
                 
             }catch (error) {
             setLoading(true);
@@ -32,15 +35,16 @@ useEffect(() => {
             <h1 className='text-4x1 font-bold mb-8 mt-2'>Usando UseEffect para realizar un fetch de la api gitHUb</h1>
             {loading ? (<Spinner/>) : (
                 <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto relative'>
-                    {users.map(user => (
-                        <CardGitHub 
-                        key = {user.id}
-                        avatar_url = {user.avatar_url}
-                        login ={user.login}
-                        html_url={user.html_url}></CardGitHub>
-                    ))}
-                </div>
+                {users.map(user => (
+                    <CardGitHub 
+                    key = {user.id}
+                    avatar_url = {user.avatar_url}
+                    login ={user.login}
+                    html_url={user.html_url}></CardGitHub>
+                ))}
+            </div>
             )}
+            
         </div>
     </>
   )
