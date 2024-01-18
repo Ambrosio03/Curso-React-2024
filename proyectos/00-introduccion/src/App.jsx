@@ -11,7 +11,7 @@ import ComponenteProps from './components/Props/ComponenteProps';
 import { UseEffectBasic } from './components/UseEffect/UseEffectBasic';
 import { ResizeListener } from './components/UseEffect/ResizeListener';
 import GitHubUsers from './components/UseEffect/GitHubUserCardApi/GitHubUsers';
-import Modal from './components/UseEffect/GitHubUserCardApi/Modal';
+//import Modal from './components/UseEffect/GitHubUserCardApi/Modal';
 //import DarkLightMode from "./components/UseState/DarkLightMode";
 
 

@@ -1,11 +1,12 @@
 import React from 'react'
 
- const Modal = (props) => {
+
+ const Modal = () => {
 
   return (
     <>
-
-  </>
+    <div>Hola</div>
+    </>
   )
 }
 
