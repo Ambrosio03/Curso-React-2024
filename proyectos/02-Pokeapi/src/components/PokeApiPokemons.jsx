@@ -51,11 +51,11 @@ export const  PokeApiPokemons = () => {
 
   return (
    
-    <div className='mx-auto max-w-[75%] text-center relative '>
+    <div className='mx-auto max-w-[75%] text-center relative'>
             <h1 className='text-4xl font-bold mb-8 mt-2 bg-red-600'>PoKeApi</h1>
             {loading ? (<Spinner/>) : (
               
-                    <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto relative'>
+                    <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mx-auto relative'>
                     {pokemons.map(pokemon => (
                         <CardPokemon
                         key = {pokemon.id}  

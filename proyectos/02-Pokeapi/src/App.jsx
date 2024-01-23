@@ -1,12 +1,10 @@
 import {  } from 'react'
 
-import './App.css';
-import { PokeApiPokemons } from './components/UseState/PokeApiPokemons'
-
+import './App.css'
+import { PokeApiPokemons } from './components/PokeApiPokemons'
 
 function App() {
 
-  
   return (
     <>
       <PokeApiPokemons></PokeApiPokemons>

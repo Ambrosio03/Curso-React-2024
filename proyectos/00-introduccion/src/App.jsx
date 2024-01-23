@@ -1,6 +1,6 @@
 
 //imports
-//import "./App.css";
+import "./App.css";
 import React from 'react'
 //import Contador from "./components/UseState/Contador";
 //import ContadorDoble from "./components/UseState/ContadorDoble";
